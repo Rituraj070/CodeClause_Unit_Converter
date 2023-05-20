@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="head">Unit Converter</h1>
+
+    <div class="click_btn">
+        <button id="length" onclick="len1()">Length</button>
+        <button id="temp" onclick="temp1()">Temp</button>
+        <button id="weight" onclick="weight1()">Weight</button>
+        <button id="time" onclick="time1()">Time</button>
+    </div>
+    <div class="main_length" id="length1">
+        <span>Meter&nbsp;&nbsp;<input type="number" name="" id="m" placeholder="meter"></span>
+
+        <span>Kilometer&nbsp;&nbsp;<input type="number" name="" id="km" placeholder="kilometer"></span>
+
+        <span>Centimeter&nbsp;&nbsp;<input type="number" name="" id="cm" placeholder="centimeter"></span>
+
+        <span>Milimeter&nbsp;&nbsp;<input type="number" name="" id="mm" placeholder="milimeter"></span>
+
+        <input type="reset" value="Reset" class="reset_btn rs" onclick="reset_length()">
+    </div>
+
+    <div class="main_temp" id="temperature1">
+
+        <span>Celcius&nbsp;&nbsp;<input type="number" name="" id="cls" placeholder="celsius"></span>
+
+        <span>Kelvin&nbsp;&nbsp;<input type="number" name="" id="kl" placeholder="kelvin"></span>
+
+        <span>Fahrenheit&nbsp;&nbsp;<input type="number" name="" id="fh" placeholder="fahrenheit"></span>
+
+        <input type="reset" value="Reset" class="reset_btn rs" onclick="reset_temp()">
+
+    </div>
+
+    <div class="main_weight" id="weight1">
+
+        <span>Gram&nbsp;&nbsp;<input type="number" name="" id="gm" placeholder="gram"></span>
+
+        <span>Kilogram&nbsp;&nbsp;<input type="number" name="" id="kgm" placeholder="kilogram"></span>
+
+        <span>Miligram&nbsp;&nbsp;<input type="number" name="" id="mgm" placeholder="miligram"></span>
+
+        <input type="reset" value="Reset" class="reset_btn rs" onclick="reset_weight()">
+
+    </div>
+
+    <div class="main_time" id="time1">
+
+        <span>Hours&nbsp;&nbsp;<input type="number" name="" id="hr" placeholder="hours"></span>
+
+        <span>Minutes&nbsp;&nbsp;<input type="number" name="" id="min" placeholder="minutes"></span>
+
+        <span>Seconds&nbsp;&nbsp;<input type="number" name="" id="sec" placeholder="seconds"></span>
+
+        <span>Miliseconds&nbsp;&nbsp;<input type="number" name="" id="ms" placeholder="miliseconds"></span>
+
+        <input type="reset" value="Reset" class="reset_btn rs" onclick="reset_time()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
